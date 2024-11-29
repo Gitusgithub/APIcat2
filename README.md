@@ -1,7 +1,42 @@
 # E-Commerce Django Project
 
-This project defines models for a basic E-commerce application with Customers and Orders. Customers can place multiple orders, creating a one-to-many relationship between Customer and Order.
+This project is a simple **E-Commerce application** built using the Django framework. It demonstrates how to define **one-to-many relationships** between models, manage database migrations, and set up a Django project for development and collaboration.
+
+---
+
 ## **Features**
-- Customer model with name and unique email.
-- Order model with customer reference, order date, and total amount.
-- One-to-many relationship between Customer and Order.
+
+1. **Customer Model**
+   - Stores customer details including:
+     - `name`: Full name of the customer (string, up to 255 characters).
+     - `email`: Unique email address (required, ensures no duplicates).
+
+2. **Order Model**
+   - Stores details of orders placed by customers:
+     - `customer`: A foreign key linking the order to a specific customer.
+     - `order_date`: The date and time when the order was placed (auto-filled).
+     - `total_amount`: Total cost of the order, stored as a decimal value for accuracy.
+
+3. **Data Relationships**
+   - Each **Customer** can place multiple **Orders** (one-to-many relationship).
+   - Orders are automatically deleted if the associated customer is removed (cascade behavior).
+
+4. **Scalable Design**
+   - The models are designed to be extended easily to include additional fields or features, such as customer addresses or order statuses.
+
+---
+
+## **Project Setup**
+
+### **Prerequisites**
+To set up and run this project, you need:
+- Python 3.8 or newer
+- Django 4.2 or newer
+- Virtual environment tools such as `venv` or `virtualenv`
+
+### **Installation Steps**
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/<your-username>/<your-repo-name>.git
+   cd <your-repo-name>
