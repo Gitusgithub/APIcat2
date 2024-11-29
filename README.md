@@ -25,18 +25,3 @@ This project is a simple **E-Commerce application** built using the Django frame
    - The models are designed to be extended easily to include additional fields or features, such as customer addresses or order statuses.
 
 ---
-
-## **Project Setup**
-
-### **Prerequisites**
-To set up and run this project, you need:
-- Python 3.8 or newer
-- Django 4.2 or newer
-- Virtual environment tools such as `venv` or `virtualenv`
-
-### **Installation Steps**
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
-   cd <your-repo-name>
